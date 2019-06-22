@@ -9,3 +9,9 @@ sudo apt-get install snapd
 sudo apt-get install filezilla
 sudo apt-get install conky
 sudo apt-get install terminator
+
+sudo apt-get install lxappearance
+
+
+echo ----Configure themes ----
+lxappearance

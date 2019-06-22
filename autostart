@@ -2,4 +2,4 @@
 xcompmgr &
 tint2 &
 sleep 10s
-conky -b -c ~/.config/.conky/.conkysystemrc &
+conky -b -c ~/.config/openbox/conky/systemrc &
