@@ -26,10 +26,13 @@
   <separator />
   <menu id="configmenu" label="configs">
 	  <item label="Config obmenu">
-		  <action name="Execute"><execute>vim ~/.config/openbox/menu.xml</execute></action>
+		  <action name="Execute"><execute>terminator --command="vim ~/.config/openbox/menu.xml"</execute></action>
 	  </item>
 	  <item label="Config rc">
-		  <action name="Execute"><execute>vim ~/.config/openbox/rc.xml </execute></action>
+		  <action name="Execute"><execute>terminator --command="vim ~/.config/openbox/rc.xml" </execute></action>
+	  </item>
+	  <item label="Commit to source control">
+		  <action name="Execute"><execute> terminator --command="sh ~/.config/openbox/commit.sh"</execute></action>
 	  </item>
   </menu>
   <item label="Config terminal">
