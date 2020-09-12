@@ -13,7 +13,7 @@
     <action name="Execute"><execute>x-www-browser</execute></action>
   </item>
   <!-- This requires the presence of the 'openbox-menu' package to work -->
-  <menu id="/Debian" />
+	  <!--<menu id="/Debian" />-->
   <separator />
   <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu"/>
   <separator />
@@ -23,6 +23,15 @@
   <item label="ObMenu">
     <action name="Execute"><execute>obmenu</execute></action>
   </item>
+  <separator />
+  <menu id="configmenu" label="configs">
+	  <item label="Config obmenu">
+		  <action name="Execute"><execute>vim ~/.config/openbox/menu.xml</execute></action>
+	  </item>
+	  <item label="Config rc">
+		  <action name="Execute"><execute>vim ~/.config/openbox/rc.xml </execute></action>
+	  </item>
+  </menu>
   <item label="Config terminal">
 	  <action name="Execute"><execute>terminator -T config --working-directory=~/.config/openbox/</execute></action>
   </item>
