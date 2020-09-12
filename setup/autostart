@@ -1,0 +1,5 @@
+#start conky
+xcompmgr &
+tint2 &
+sleep 10s
+conky -b -c ~/.config/openbox/conky/systemrc &
