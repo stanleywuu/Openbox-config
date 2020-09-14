@@ -15,10 +15,13 @@ sudo apt-get install lxappearance
 
 #browsers
 sudo apt-get install qutebrowser
-sudo apt-get install midori
+
+#set aliases
+alias configterm='terminator -l Config'
+alias term=terminator
+alias browser=qutebrowser
 
 sh devSetup.sh
 
 
-echo ----Configure themes ----
 lxappearance
