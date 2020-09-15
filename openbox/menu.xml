@@ -25,18 +25,24 @@
   </item>
   <separator />
   <menu id="configmenu" label="configs">
-	  <item label="Config obmenu">
+	  <item label="Menu (obmenu)">
 		  <action name="Execute"><execute>terminator --command="vim ~/.config/openbox/menu.xml"</execute></action>
 	  </item>
-	  <item label="Config rc">
+	  <item label="Openbox Config (rc.xml)">
 		  <action name="Execute"><execute>terminator --command="vim ~/.config/openbox/rc.xml" </execute></action>
+	  </item>
+	  <item label="Autostart (config)">
+		  <action name="Execute"><execute>terminator --command="vim ~/.config/openbox/autostart" </execute></action>
+	  </item>
+	  <item label="Setup script">
+		  <action name="Execute"><execute>terminator --command="vim ~/source/Openbox-config/setup/setupscript.sh" </execute></action>
 	  </item>
 	  <item label="Commit to source control">
 		  <action name="Execute"><execute> terminator --command="sh ~/.config/openbox/commit.sh"</execute></action>
 	  </item>
   </menu>
   <item label="Config terminal">
-	  <action name="Execute"><execute>terminator -T config --working-directory=~/.config/openbox/</execute></action>
+	  <action name="Execute"><execute>terminator -T config -l Config --working-directory=~/.config/openbox/</execute></action>
   </item>
 
   <item label="Restart apache">
