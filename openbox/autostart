@@ -1,0 +1,10 @@
+#start conky
+xrandr --output HDMI-1 --left-of eDP-1
+xcompmgr &
+tint2 -c ~/.config/openbox/tint2/tint2rc &
+#tint2 -c ~/.config/openbox/tint2/tint2launcherrc &
+sleep 3s
+qutebrowser &
+terminator &
+code &
+conky -b -c ~/.config/openbox/conky/systemrc &

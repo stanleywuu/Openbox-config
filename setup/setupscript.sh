@@ -11,20 +11,25 @@ sudo apt-get install filezilla
 sudo apt-get install conky
 sudo apt-get install terminator
 sudo apt-get install lxappearance
+sudo apt-get install feh
 
 #browsers
 sudo apt-get install qutebrowser
 
 #set aliases
 #courtesy of https://stackoverflow.com/a/3557165
-FILE="~/.bashrc"
+FILE=~/.bashrc
 LINE='alias term=terminator'
-sudo grep -qF -- "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
+sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
 LINE='alias browser=qutebrowser'
-sudo grep -qF -- "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
-LINE = "alias configterm='terminator -l Config"
-sudo grep -qF -- "$LINE" "$FILE" || echo "$LINE" >> "$FILE"
+sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
+LINE="alias configterm='terminator -l Config'"
+sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
 
+LINE='alias myeditor=code'
+sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
+
+source $FILE
 sh devSetup.sh
 
 lxappearance

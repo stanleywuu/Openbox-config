@@ -1,7 +1,8 @@
 #bash
 mkdir ~/.config/openbox
 mkdir ~/.config/openbox/conky
+mkdir ~/.config/openbox/tint2
+
 cp ../autostart ~/.config/openbox/autostart
-cp ../*.xml ~/.config/openbox/
-cp ../conky/* ~/.config/openbox/conky/
+cp ../openbox/* ~/.config/openbox/ -r -f
 

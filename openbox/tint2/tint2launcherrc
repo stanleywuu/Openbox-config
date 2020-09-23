@@ -1,0 +1,19 @@
+#panel
+panel_items = LT
+panel_position = top center
+# width height
+panel_size 400 530
+panel_shrink = 0
+#panel_layer = bottom
+#-------------
+#launcher
+launcher_padding = 8 16 8
+launcher_icon_size = 64
+launcher_tooltip = 1
+launcher_item_app = /usr/share/applications/cinnamon-settings-workspaces.desktop
+launcher_item_app = /usr/share/applications/cinnamon-settings-windows.desktop
+launcher_item_app = /usr/share/applications/exo-web-browser.desktop
+launcher_item_app = /usr/share/applications/vim.desktop
+launcher_item_app = /usr/share/applications/org.gnome.Terminal.desktop
+launcher_item_app = /usr/share/applications/thunar.desktop
+launcher_item_app = /usr/share/applications/cinnamon-settings-applets.desktop
