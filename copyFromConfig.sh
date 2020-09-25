@@ -1,3 +1,3 @@
 #bash
 mkdir openbox
-cp ~/.config/openbox/*.xml openbox/
+cp ~/.config/openbox/* openbox/ -r -f

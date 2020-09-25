@@ -1,2 +1,1 @@
-cp openbox/*.xml ~/.config/openbox/
-cp conky/* ~/.config/openbox/conky/
+cp openbox/* ~/.config/openbox/ -r -f

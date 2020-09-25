@@ -1,10 +1,13 @@
 #start conky
+xsetroot -solid black
 xrandr --output HDMI-1 --left-of eDP-1
+conky -b -c ~/.config/openbox/conky/systemrc &
+conky -b -c ~/.config/openbox/wallpaper/icebearrc &
 xcompmgr &
+feh --bg-center ~/.config/openbox/wallpaper/wbb.jpg
 tint2 -c ~/.config/openbox/tint2/tint2rc &
 #tint2 -c ~/.config/openbox/tint2/tint2launcherrc &
-sleep 3s
+sleep 2s
 qutebrowser &
 terminator &
 code &
-conky -b -c ~/.config/openbox/conky/systemrc &

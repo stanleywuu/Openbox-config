@@ -1,5 +1,6 @@
 sudo apt-get install openbox
 sudo apt-get install menu
+sudo apt-get install urxvt
 sudo apt-get install obmenu
 sudo apt-get install xcompmgr
 sudo apt-get install obconf
@@ -12,6 +13,7 @@ sudo apt-get install conky
 sudo apt-get install terminator
 sudo apt-get install lxappearance
 sudo apt-get install feh
+sudo apt-get install fzf
 
 #browsers
 sudo apt-get install qutebrowser
@@ -27,6 +29,12 @@ LINE="alias configterm='terminator -l Config'"
 sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
 
 LINE='alias myeditor=code'
+sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
+
+LINE="alias apt='sudo apt-get'"
+sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
+
+LINE="alias apti='sudo apt-get install'"
 sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
 
 source $FILE

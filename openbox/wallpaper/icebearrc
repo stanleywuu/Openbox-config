@@ -16,39 +16,39 @@ conky.config ={
   
   -- CONKY: WINDOW SPECIFICATIONS
   own_window = true,
-  own_window_argb_value = 0,
-  own_window_argb_visual = true,
+  own_window_argb_visual = false,
+  --own_window_argb_value = 0,
   own_window_class = 'conky-semi',
-  -- own_window_colour = '#0b0d18',
+  own_window_colour = '#000000',
   own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',
+  -- own_window_transparent = false,
   -- own_window_transparent = true,
-  own_window_transparent = false,
-  own_window_type = 'normal',
-  -- own_window_type = 'desktop',
+  -- own_window_type = 'normal',
+  own_window_type = 'desktop',
 
-  border_inner_margin = 30,
+  border_inner_margin = 6,
   border_width = 5, 
 
-  minimum_height = 260,
+  minimum_height = 1024,
 
-  minimum_width = 500,
-  maximum_width = 500,
+  minimum_width = 2024,
+  --maximum_width = 500,
 
-  alignment = 'top_right',
+  alignment = 'top_left',
   gap_x = 0,
-  gap_y = 80,
+  gap_y = 15,
 
   -- GRAPHICS SETTINGS
   draw_shades = false,
-  draw_outline = false,
+  draw_outline = true,
   draw_borders = false,
   draw_graph_borders = true,
   -- draw_graph_borders = false,
 
   -- TEXT SETTINGS
   use_xft = true,
-  font = 'Montserrat Regular:size=10',
-  xftalpha = 0.2,
+  font = 'Montserrat Regular:size=14',
+  xftalpha = 0.8,
 
   uppercase = false,
 
@@ -56,10 +56,10 @@ conky.config ={
   pad_percents = 2,
 
   -- COLOUR SETTINGS
-  default_color = 'FFFFFF',
-  -- default_shade_color = '333333',
+  default_color = 'BEDEAD',
+  default_shade_color = '333333',
   -- default_outline_color = '111111',
-  -- default_outline_color = '010101',
+  default_outline_color = '010101',
   color1 = '999999',
   color2 = 'CCCCCC',
   color3 = 'EEEEEE',
@@ -68,12 +68,8 @@ conky.config ={
   color6 = '666666',
 };
 
-
 conky.text = [[
-${alignr}${color}${font Montserrat Bold:size=60}${time %H:%M:%S}${font}${color}${alignr}
-${voffset -9}
-${alignr}${font Montserrat Light:size=30}${time %A %d %B %Y}${font}${alignr}
-${color6}${hr 2}${color} 
-${voffset -6}
-
+${image ~/.config/openbox/wallpaper/wbb.jpg -p 0,0 -s 2024x1094}
+${image ~/.config/openbox/wallpaper/mischieviousbear.png -p 0,780 -s 252x265}
 ]];
+
