@@ -1,7 +1,7 @@
 conky.config ={
   -- CONKY SETTINGS
   background = true,
-  update_interval = 1,
+  update_interval = 15,
   total_run_times = 0,
   
   cpu_avg_samples = 2,
@@ -20,22 +20,22 @@ conky.config ={
   own_window_argb_visual = true,
   own_window_class = 'conky-semi',
   -- own_window_colour = '#0b0d18',
-  own_window_hints = 'undecorated,below,skip_taskbar,skip_pager',
+  own_window_hints = 'undecorated,below,skip_taskbar,skip_pager, sticky',
   -- own_window_transparent = true,
   own_window_transparent = false,
   own_window_type = 'normal',
   -- own_window_type = 'desktop',
 
-  border_inner_margin = 30,
+  border_inner_margin = 0,
   border_width = 5, 
 
-  minimum_height = 260,
+  minimum_height = 460,
 
-  minimum_width = 500,
-  maximum_width = 500,
+  minimum_width = 800,
+  maximum_width = 800,
 
   alignment = 'top_right',
-  gap_x = 0,
+  gap_x = -30,
   gap_y = 80,
 
   -- GRAPHICS SETTINGS
@@ -56,8 +56,8 @@ conky.config ={
   pad_percents = 2,
 
   -- COLOUR SETTINGS
-  default_color = 'FFFFFF',
-  -- default_shade_color = '333333',
+  default_color = '068D98',
+  default_shade_color = '068D98',
   -- default_outline_color = '111111',
   -- default_outline_color = '010101',
   color1 = '999999',
@@ -75,5 +75,5 @@ ${voffset -9}
 ${alignr}${font Montserrat Light:size=30}${time %A %d %B %Y}${font}${alignr}
 ${color6}${hr 2}${color} 
 ${voffset -6}
-
+${alignr}${color}${font Montserrat Light:size=30} ${execi 30 bash ~/.config/openbox/conky/icebear/randomquote.sh| fold -s -40 | tr -d '"'}
 ]];

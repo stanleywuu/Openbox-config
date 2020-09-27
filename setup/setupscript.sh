@@ -14,6 +14,8 @@ sudo apt-get install terminator
 sudo apt-get install lxappearance
 sudo apt-get install feh
 sudo apt-get install fzf
+sudo apt-get install tmux
+sudo apt-get install flameshot
 
 #browsers
 sudo apt-get install qutebrowser
@@ -21,7 +23,7 @@ sudo apt-get install qutebrowser
 #set aliases
 #courtesy of https://stackoverflow.com/a/3557165
 FILE=~/.bashrc
-LINE='alias term=terminator'
+LINE='alias term=tmux'
 sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
 LINE='alias browser=qutebrowser'
 sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
