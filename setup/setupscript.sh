@@ -16,6 +16,8 @@ sudo apt-get install feh
 sudo apt-get install fzf
 sudo apt-get install tmux
 sudo apt-get install flameshot
+sudo apt-get install nodejs
+sudo apt-get install npm
 
 #browsers
 sudo apt-get install qutebrowser
