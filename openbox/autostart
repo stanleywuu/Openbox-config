@@ -1,4 +1,6 @@
 #start conky
+devilspie &
+alacritty -t **fullscreen** &
 brightnessctl s 30%
 xsetroot -solid black
 xrandr --output HDMI-1 --left-of eDP-1

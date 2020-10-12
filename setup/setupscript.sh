@@ -1,6 +1,5 @@
 sudo apt-get install openbox
 sudo apt-get install menu
-sudo apt-get install urxvt
 sudo apt-get install xcompmgr
 sudo apt-get install obconf
 sudo apt-get install obmenu
@@ -26,7 +25,6 @@ sudo apt-get install qutebrowser
 #install snap
 sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt update
-sudo apt install snapd
 
 #set aliases
 #courtesy of https://stackoverflow.com/a/3557165

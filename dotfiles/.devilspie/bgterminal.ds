@@ -1,0 +1,6 @@
+(if (contains (window_name) "**fullscreen**")
+	(begin
+		(undecorate)
+		(maximize)
+	)
+)

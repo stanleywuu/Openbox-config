@@ -38,9 +38,10 @@ conky.config ={
 
   -- GRAPHICS SETTINGS
   draw_shades = false,
-  draw_outline = false,
   draw_borders = false,
   draw_graph_borders = true,
+  draw_outline = true,
+
   -- draw_graph_borders = false,
 
   -- TEXT SETTINGS
@@ -48,30 +49,24 @@ conky.config ={
   font = 'Montserrat Regular:size=10',
   xftalpha = 0.2,
 
-  uppercase = false,
+  uppercase = true,
 
   -- Pad percentages to this many decimals (0 = no padding)
   pad_percents = 2,
 
   -- COLOUR SETTINGS
   default_color = '068D98',
-  default_shade_color = '068D98',
-  -- default_outline_color = '111111',
-  -- default_outline_color = '010101',
-  color1 = '999999',
-  color2 = 'CCCCCC',
-  color3 = 'EEEEEE',
-  color4 = '444444',
-  color5 = '555555',
-  color6 = '666666',
+  --default_shade_color = '068D98',
+  default_shade_color = '000000',
+  default_outline_color = 'white',
 };
 
 
 conky.text = [[
-${alignr}${color}${font Montserrat Bold:size=60}${time %H:%M:%S}${font}${color}${alignr}
+${alignr}${color}${font Play:Bold:size=60}${time %H:%M:%S}${font}${color}${alignr}
 ${voffset -9}
-${alignr}${font Montserrat Light:size=30}${time %A %d %B %Y}${font}${alignr}
+${alignr}${font Montserrat:Bold:size=30}${time %A %d %B %Y}${font}${alignr}
 ${color6}${hr 2}${color} 
 ${voffset -6}
-${alignr}${color}${font Montserrat Light:size=30} ${exec bash ~/.config/openbox/conky/icebear/randomquote.sh}
+${alignr}${color}${font Play:Bold:size=30} ${exec bash ~/.config/openbox/conky/icebear/randomquote.sh}
 ]];

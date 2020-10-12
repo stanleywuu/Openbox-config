@@ -2,8 +2,10 @@
 rm -r -f openbox/
 mkdir openbox
 mkdir dotfiles
+mkdir dotfiles/.devilspie
 
 cp ~/.config/openbox/* openbox/ -r -f
+cp ~/.devilspie/* dotfiles/.devilspie/
 
 mkdir dotfiles
 cp ~/.vimrc dotfiles/
