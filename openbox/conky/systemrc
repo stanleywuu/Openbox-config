@@ -46,6 +46,7 @@ conky.config ={
 
   -- TEXT SETTINGS
   use_xft = true,
+  --font = 'Montserrat Regular:size=10',
   font = 'Montserrat Regular:size=10',
   xftalpha = 0.2,
 

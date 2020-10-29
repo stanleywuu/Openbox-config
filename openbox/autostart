@@ -1,5 +1,6 @@
 #start conky
 devilspie &
+gnome-session &
 alacritty -t **fullscreen** &
 brightnessctl s 30%
 xsetroot -solid black
@@ -11,5 +12,4 @@ feh --bg-center ~/.config/openbox/wallpaper/nicebear.jpg
 tint2 -c ~/.config/openbox/tint2/tint2rc &
 sleep 2s
 qutebrowser &
-terminator &
 code &

@@ -6,6 +6,7 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'valloric/youcompleteme'
+Plug 'puremourning/vimspector'
 
 call plug#end()
 
@@ -33,7 +34,7 @@ nnoremap <C-H> <C-W><C-H>
 
 nnoremap <C-N> :tabnew<CR>
 nnoremap <C-P> :Files<CR>
-nnoremap <C-R> :source %<CR>
+nnoremap <M-R> :source %<CR>
 
 imap jj <Esc>
 

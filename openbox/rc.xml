@@ -58,7 +58,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Zekton</name>
-      <size>14</size>
+      <size>12</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -67,7 +67,7 @@
     </font>
     <font place="InactiveWindow">
       <name>FreeSans</name>
-      <size>9</size>
+      <size>11</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -258,7 +258,13 @@
     <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -s</command>
+        <command>peek</command>
+      </action>
+    </keybind>
+    <!-- Take a screenshot using flameshot-->
+    <keybind key="Print">
+      <action name="Execute">
+        <command>flameshot gui</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
