@@ -33,7 +33,7 @@ conky.config ={
   maximum_width = 800,
 
   alignment = 'top_right',
-  gap_x = 30,
+  gap_x = 0,
   gap_y = 80,
 
   -- GRAPHICS SETTINGS
