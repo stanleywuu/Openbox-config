@@ -33,7 +33,7 @@ conky.config ={
   maximum_width = 800,
 
   alignment = 'top_right',
-  gap_x = 0,
+  gap_x = 30,
   gap_y = 80,
 
   -- GRAPHICS SETTINGS
@@ -64,10 +64,10 @@ conky.config ={
 
 
 conky.text = [[
-${alignr}${color}${font Play:Bold:size=60}${time %H:%M:%S}${font}${color}${alignr}
+${alignr}${color}${font Play:Bold:size=40}${time %H:%M:%S}${font}${color}${alignr}
 ${voffset -9}
-${alignr}${font Montserrat:Bold:size=30}${time %A %d %B %Y}${font}${alignr}
+${alignr}${font Montserrat:Bold:size=20}${time %A %d %B %Y}${font}${alignr}
 ${color6}${hr 2}${color} 
 ${voffset -6}
-${alignr}${color}${font Play:Bold:size=30} ${exec bash ~/.config/openbox/conky/icebear/randomquote.sh}
+${alignr}${color}${font Play:Bold:size=20} ${exec bash ~/.config/openbox/conky/icebear/randomquote.sh}
 ]];
