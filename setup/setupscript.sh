@@ -20,6 +20,7 @@ sudo apt-get install nodejs
 sudo apt-get install npm
 sudo apt-get install gnome-settings-daemon
 sudo apt-get install redshfit redshift-gtk
+sudo apt-get install gmrun
 
 #browsers
 sudo apt-get install qutebrowser
