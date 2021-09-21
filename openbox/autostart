@@ -2,6 +2,7 @@
 devilspie &
 #gnome-session &
 #alacritty -t **fullscreen** &
+redshift-gtk &
 brightnessctl s 10%
 xsetroot -solid black
 xrandr --output HDMI-1 --left-of eDP-1

@@ -19,12 +19,13 @@ sudo apt-get install flameshot
 sudo apt-get install nodejs
 sudo apt-get install npm
 sudo apt-get install gnome-settings-daemon
+sudo apt-get install redshfit redshift-gtk
 
 #browsers
 sudo apt-get install qutebrowser
 
 #install snap
-sudo rm /etc/apt/preferences.d/nosnap.pref
+#sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt update
 
 #set aliases
