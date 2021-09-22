@@ -21,6 +21,9 @@ sudo apt-get install npm
 sudo apt-get install gnome-settings-daemon
 sudo apt-get install redshfit redshift-gtk
 sudo apt-get install gmrun
+sudo apt-get install rxvt-unicode
+sudo apt-get install rofi
+sudo apt-get install compton
 
 #browsers
 sudo apt-get install qutebrowser
