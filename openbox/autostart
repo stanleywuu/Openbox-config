@@ -8,7 +8,7 @@ xsetroot -solid black
 xrandr --output HDMI-1 --left-of eDP-1
 conky -b -c ~/.config/openbox/conky/systemrc &
 #xcompmgr &
-compton --config ~/.config/compton.conf &
+compton --config ~/.config/openbox/compton.conf &
 flameshot &
 feh --bg-center ~/.config/openbox/wallpaper/nicebear.jpg
 tint2 -c ~/.config/openbox/tint2/tint2rc &
