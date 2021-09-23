@@ -24,6 +24,7 @@ sudo apt-get install gmrun
 sudo apt-get install rxvt-unicode
 sudo apt-get install rofi
 sudo apt-get install compton
+sudo apt-get install leafpad
 
 #browsers
 sudo apt-get install qutebrowser

@@ -2,7 +2,6 @@
 devilspie &
 #gnome-session &
 #alacritty -t **fullscreen** &
-redshift-gtk &
 brightnessctl s 10%
 xsetroot -solid black
 xrandr --output HDMI-1 --left-of eDP-1
@@ -11,8 +10,16 @@ conky -b -c ~/.config/openbox/conky/systemrc &
 compton --config ~/.config/openbox/compton.conf &
 flameshot &
 feh --bg-center ~/.config/openbox/wallpaper/nicebear.jpg
+
 tint2 -c ~/.config/openbox/tint2/tint2rc &
 tint2 -c ~/.config/openbox/tint2/tint2launcherrc &
+
+urxvt -name urxvt-back1 &
+urxvt -name urxvt-back2 &
+urxvt -name urxvt-back3 &
+urxvt -name urxvt-back4 &
+
 sleep 2s
 qutebrowser &
 code &
+redshift-gtk &

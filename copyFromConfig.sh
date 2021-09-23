@@ -11,6 +11,7 @@ mkdir dotfiles
 cp ~/.vimrc dotfiles/
 cp ~/.tmux.conf dotfiles/
 cp ~/.bashrc dotfiles/
+cp ~/.Xresources dotfiles/
 
 rm .*.swp -r -f
 rm *.backup.* -r -f

@@ -711,6 +711,54 @@ Copy the file to $HOME/.config/openbox/ instead. -->
 			<maximized>true</maximized>
 			<decor>yes</decor>
 		</application>
+		<application name="urxvt-back1">
+			<focus>false</focus>
+			<maximized>true</maximized>
+			<decor>no</decor>
+			<position force="no">
+                    <x>0</x>
+                    <y>0</y>
+                    <layer>below</layer>
+            </position>
+            <skip_taskbar>yes</skip_taskbar>
+            <desktop>1</desktop>
+		</application>
+		<application name="urxvt-back2">
+			<focus>false</focus>
+			<maximized>true</maximized>
+			<decor>no</decor>
+			<position force="no">
+                    <x>0</x>
+                    <y>0</y>
+                    <layer>below</layer>
+            </position>
+            <desktop>2</desktop>
+            <skip_taskbar>yes</skip_taskbar>
+		</application>
+		<application name="urxvt-back3">
+			<focus>false</focus>
+			<maximized>true</maximized>
+			<decor>no</decor>
+			<position force="no">
+                    <x>0</x>
+                    <y>0</y>
+                    <layer>below</layer>
+            </position>
+            <desktop>3</desktop>
+            <skip_taskbar>yes</skip_taskbar>
+		</application>
+		<application name="urxvt-back4">
+			<focus>false</focus>
+			<maximized>true</maximized>
+			<decor>no</decor>
+			<position force="no">
+                    <x>0</x>
+                    <y>0</y>
+                    <layer>below</layer>
+            </position>
+            <desktop>4</desktop>
+            <skip_taskbar>yes</skip_taskbar>
+		</application>
 		<!--
 			# this is an example with comments through out. use these to make your
 			# own rules, but without the comments of course.
