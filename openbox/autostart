@@ -12,6 +12,7 @@ compton --config ~/.config/openbox/compton.conf &
 flameshot &
 feh --bg-center ~/.config/openbox/wallpaper/nicebear.jpg
 tint2 -c ~/.config/openbox/tint2/tint2rc &
+tint2 -c ~/.config/openbox/tint2/tint2launcherrc &
 sleep 2s
 qutebrowser &
 code &
