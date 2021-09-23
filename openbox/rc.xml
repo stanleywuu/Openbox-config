@@ -337,10 +337,13 @@ Copy the file to $HOME/.config/openbox/ instead. -->
 				<command>gmrun</command>
 			</action>
 		</keybind>
-		<!-- Launch scrot when Print is pressed -->
-		<keybind key="Print">
+		<keybind key="W-t">
 			<action name="Execute">
-				<command>scrot</command>
+				<startupnotify>
+					<enabled>true</enabled>
+					<name>terminator</name>
+				</startupnotify>
+				<command>terminator</command>
 			</action>
 		</keybind>
 	</keyboard>
