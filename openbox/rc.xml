@@ -736,7 +736,6 @@ Copy the file to $HOME/.config/openbox/ instead. -->
                     <layer>below</layer>
             </position>
             <desktop>2</desktop>
-            <skip_taskbar>yes</skip_taskbar>
 		</application>
 		<application name="urxvt-back3">
 			<focus>false</focus>
@@ -748,7 +747,6 @@ Copy the file to $HOME/.config/openbox/ instead. -->
                     <layer>below</layer>
             </position>
             <desktop>3</desktop>
-            <skip_taskbar>yes</skip_taskbar>
 		</application>
 		<application name="urxvt-back4">
 			<focus>false</focus>
@@ -760,7 +758,6 @@ Copy the file to $HOME/.config/openbox/ instead. -->
                     <layer>below</layer>
             </position>
             <desktop>4</desktop>
-            <skip_taskbar>yes</skip_taskbar>
 		</application>
 		<!--
 			# this is an example with comments through out. use these to make your
