@@ -116,6 +116,13 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+export PS1="\u@\h \[\e[36m\]\w \[\e[92m\]\$(parse_git_branch)\[\e[00m\]$ "
+
 alias term=terminator
 alias browser=qutebrowser
 alias configterm='terminator -l Config'
