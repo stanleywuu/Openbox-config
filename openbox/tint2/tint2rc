@@ -11,11 +11,11 @@ border_width = 1
 border_sides = TBLR
 border_content_tint_weight = 0
 background_content_tint_weight = 0
-background_color = #000000 80
+background_color = #FFFFFF 80
 border_color = #555555 80
-background_color_hover = #000000 80
+background_color_hover = #FFFFFF 80
 border_color_hover = #555555 80
-background_color_pressed = #000000 80
+background_color_pressed = #FFFFFF 80
 border_color_pressed = #555555 80
 
 # Background 2: Default task, Iconified task
