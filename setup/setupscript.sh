@@ -53,6 +53,8 @@ LINE="alias apti='sudo apt-get install'"
 sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
 
 source $FILE
-sh devSetup.sh
+sh ./internal/devSetup.sh
+sh ./internal/setupOpenbox.sh
+sh ./internal/setupfonts.sh
 
 lxappearance
