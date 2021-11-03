@@ -122,6 +122,8 @@ parse_git_branch() {
 }
 
 export PS1="\u@\h \[\e[36m\]\w \[\e[92m\]\$(parse_git_branch)\[\e[00m\]$ "
+alias docker='sudo docker'
+alias dc='sudo docker-compose'
 
 alias term=terminator
 alias browser=qutebrowser
