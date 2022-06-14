@@ -5,8 +5,8 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 Plug 'nelstrom/vim-visual-star-search'
-Plug 'valloric/youcompleteme'
-Plug 'puremourning/vimspector'
+"Plug 'valloric/youcompleteme'
+"Plug 'puremourning/vimspector'
 
 call plug#end()
 
@@ -23,6 +23,9 @@ set expandtab
 set tabstop=4
 set rnu
 
+set foldmethod=syntax
+set foldlevel=99
+
 syntax on
 
 "autocmd vimenter * NERDTree
@@ -38,5 +41,16 @@ nnoremap <C-N> :tabnew<CR>
 nnoremap <C-P> :Files<CR>
 nnoremap <M-R> :source %<CR>
 
+"split navigations
+"below
+nnoremap <C-J> <C-W><C-J>
+"above
+nnoremap <C-K> <C-W><C-K>
+"right
+nnoremap <C-L> <C-W><C-L>
+"left
+nnoremap <C-H> <C-W><C-H>
+
 imap jj <Esc>
+nnoremap <space> za
 

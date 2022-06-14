@@ -328,15 +328,6 @@ Copy the file to $HOME/.config/openbox/ instead. -->
 				<command>firefox</command>
 			</action>
 		</keybind>
-		<keybind key="W-r">
-			<action name="Execute">
-				<startupnotify>
-					<enabled>true</enabled>
-					<name>gmrun</name>
-				</startupnotify>
-				<command>gmrun</command>
-			</action>
-		</keybind>
 		<keybind key="W-t">
 			<action name="Execute">
 				<startupnotify>
