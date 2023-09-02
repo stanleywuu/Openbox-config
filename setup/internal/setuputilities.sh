@@ -5,5 +5,3 @@ sudo apt-get install peek
 #ftp
 sudo apt-get install ncftp
 
-sudo apt-get install git
-git config --global core.editor "vim"
