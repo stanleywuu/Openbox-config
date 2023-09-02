@@ -1,33 +1,34 @@
-sudo apt-get install openbox
-sudo apt-get install menu
-sudo apt-get install xcompmgr
-sudo apt-get install obconf
-sudo apt-get install obmenu
-sudo apt-get install devilspie
-sudo apt-get install vim
-sudo apt-get install tint2
-sudo apt-get install thunar
-sudo apt-get install snapd
-sudo apt-get install filezilla
-sudo apt-get install conky
-sudo apt-get install terminator
-sudo apt-get install lxappearance
-sudo apt-get install feh
-sudo apt-get install fzf
-sudo apt-get install tmux
-sudo apt-get install flameshot
-sudo apt-get install nodejs
-sudo apt-get install npm
-sudo apt-get install gnome-settings-daemon
-sudo apt-get install redshfit redshift-gtk
-sudo apt-get install gmrun
-sudo apt-get install rxvt-unicode
-sudo apt-get install rofi
-sudo apt-get install compton
-sudo apt-get install leafpad
+echo ====INSTALL Openbox related Items========
+
+sudo apt-get install openbox -y
+sudo apt-get install menu -y
+sudo apt-get install xcompmgr -y
+sudo apt-get install obconf -y
+sudo apt-get install obmenu -y
+sudo apt-get install devilspie -y
+sudo apt-get install vim -y
+sudo apt-get install tint2 -y
+sudo apt-get install thunar -y
+sudo apt-get install snapd -y
+sudo apt-get install filezilla -y
+sudo apt-get install conky -y
+sudo apt-get install terminator -y
+sudo apt-get install lxappearance -y
+sudo apt-get install feh -y
+sudo apt-get install fzf -y
+sudo apt-get install tmux -y
+sudo apt-get install flameshot -y
+sudo apt-get install nodejs -y
+sudo apt-get install npm -y
+sudo apt-get install gnome-settings-daemon -y
+sudo apt-get install redshfit redshift-gtk -y
+sudo apt-get install gmrun -y
+sudo apt-get install rxvt-unicode -y
+sudo apt-get install rofi -y
+sudo apt-get install compton -y
 
 #browsers
-sudo apt-get install qutebrowser
+sudo apt-get install qutebrowser -y
 
 #install snap
 #sudo rm /etc/apt/preferences.d/nosnap.pref
@@ -53,8 +54,12 @@ LINE="alias apti='sudo apt-get install'"
 sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
 
 source $FILE
+echo =====Set up dev tools======
 sh ./internal/devSetup.sh
+sh ./internal/vimSetup.sh
 sh ./internal/setupOpenbox.sh
+
+echo =====Set up fonts =====
 sh ./internal/setupfonts.sh
 
 lxappearance
