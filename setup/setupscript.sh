@@ -37,7 +37,9 @@ sudo apt update
 #set aliases
 #courtesy of https://stackoverflow.com/a/3557165
 FILE=~/.bashrc
-LINE='alias term=tmux'
+LINE='alias term=terminator'
+sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
+LINE='export TERMINAL=terminator'
 sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
 LINE='alias browser=qutebrowser'
 sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 

@@ -1,3 +1,4 @@
+xinput set-prop 12 321 1 &
 #start conky
 devilspie &
 #gnome-session &

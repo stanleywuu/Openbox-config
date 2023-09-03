@@ -250,11 +250,6 @@ Copy the file to $HOME/.config/openbox/ instead. -->
 			<action name="FocusToBottom"/>
 			<action name="Unfocus"/>
 		</keybind>
-		<keybind key="A-space">
-			<action name="ShowMenu">
-				<menu>client-menu</menu>
-			</action>
-		</keybind>
 		<!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
 		<keybind key="A-Print">
 			<action name="Execute">
@@ -341,9 +336,18 @@ Copy the file to $HOME/.config/openbox/ instead. -->
 			<action name="Execute">
 				<startupnotify>
 					<enabled>true</enabled>
-					<name>terminator</name>
+					<name>terminal</name>
 				</startupnotify>
-				<command>terminator</command>
+				<command>bash -ic '$TERMINAL'</command>
+			</action>
+		</keybind>
+		<keybind key="C-A-Delete">
+			<action name="Execute">
+				<startupnotify>
+					<enabled>true</enabled>
+					<name>ctrl_alt_backspace</name>
+				</startupnotify>
+				<command>openbox --exit</command>
 			</action>
 		</keybind>
 	</keyboard>

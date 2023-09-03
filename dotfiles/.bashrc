@@ -137,5 +137,6 @@ alias g.git='cd ~/source/'
 alias g.source='cd ~/source/'
 alias g.setup='cd ~/source/Openbox-config/setup'
 alias g.contentlab='cd ~/contentlab/'
+export TERMINAL=alacritty
 
 stty -ixon
