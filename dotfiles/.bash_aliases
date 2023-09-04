@@ -1,5 +1,5 @@
 alias g.push='git push'
-alias gm='git commit'
+alias gc='git commit -m '
 
 
 ## get rid of command not found ##
