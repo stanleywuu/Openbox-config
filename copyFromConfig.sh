@@ -5,6 +5,7 @@ mkdir dotfiles
 mkdir dotfiles/.devilspie
 
 cp ~/.config/openbox/* openbox/ -r -f
+cp ~/.config/alacritty/* dotfiles/alacritty/ -r -f
 cp ~/.devilspie/* dotfiles/.devilspie/
 
 mkdir dotfiles

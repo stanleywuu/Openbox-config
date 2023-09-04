@@ -1,3 +1,5 @@
+window:
+  start_up: Maximized
 selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
@@ -5,7 +7,7 @@ selection:
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: true
 
- key_bindings:
-- { key: V, mods: Control, action: Paste }
-- { key: C, mods: Control, action: Copy }
-- { key: C, mods: Control|Shift, chars: "\x03" } 
+key_bindings:
+  - { key: V, mods: Control, action: Paste }
+  - { key: C, mods: Control, action: Copy }
+  - { key: C, mods: Control|Shift, chars: "\x03" } 
