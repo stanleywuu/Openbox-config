@@ -34,24 +34,7 @@ sudo apt-get install qutebrowser -y
 #sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt update
 
-#set aliases
-#courtesy of https://stackoverflow.com/a/3557165
-FILE=~/.bashrc
-LINE='alias term=tmux'
-sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
-LINE='alias browser=qutebrowser'
-sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
-LINE="alias configterm='terminator -l Config'"
-sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
-
-LINE='alias myeditor=code'
-sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
-
-LINE="alias apt='sudo apt-get'"
-sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
-
-LINE="alias apti='sudo apt-get install'"
-sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
+sh setAliases.sh
 
 source $FILE
 echo =====Set up dev tools======
