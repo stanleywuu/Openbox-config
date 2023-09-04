@@ -52,3 +52,10 @@ URxvt.scrollBar_right: false
 URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
+
+!!Copy and paste
+URxvt.keysym.Control-V: eval:paste_clipboard
+URxvt.keysym.Control-C: eval:selection_to_clipboard
+
+!!disable previous binding
+!!URxvt.keysym.Control-V: builtin-string:
