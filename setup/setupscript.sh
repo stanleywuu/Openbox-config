@@ -36,7 +36,7 @@ sudo apt update
 
 #set aliases
 #courtesy of https://stackoverflow.com/a/3557165
-FILE=~/.bashrc
+FILE=~/.bash_aliases
 LINE='alias term=terminator'
 sudo grep -qF "$LINE"  $FILE || echo  $LINE  >>  $FILE 
 LINE='export TERMINAL=terminator'

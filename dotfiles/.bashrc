@@ -122,21 +122,5 @@ parse_git_branch() {
 }
 
 export PS1="\u@\h \[\e[36m\]\w \[\e[92m\]\$(parse_git_branch)\[\e[00m\]$ "
-alias docker='sudo docker'
-alias dc='sudo docker-compose'
-
-alias term=terminator
-alias browser=qutebrowser
-alias configterm='terminator -l Config'
-alias myeditor=code
-alias apt='sudo apt-get'
-alias aptinst='sudo apt-get install'
-alias g.conky='cd ~/.config/openbox/conky'
-alias g.config='cd ~/.config/openbox'
-alias g.git='cd ~/source/'
-alias g.source='cd ~/source/'
-alias g.setup='cd ~/source/Openbox-config/setup'
-alias g.contentlab='cd ~/contentlab/'
-export TERMINAL=alacritty
 
 stty -ixon
