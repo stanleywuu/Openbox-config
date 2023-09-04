@@ -38,5 +38,11 @@ nnoremap <C-N> :tabnew<CR>
 nnoremap <C-P> :Files<CR>
 nnoremap <M-R> :source %<CR>
 
+"tmux like tab section, use n and p to select next and previous
+nmap <C-A>0 :tabfirst<CR>
+nmap <C-A>p :tabp<CR>
+nmap <C-A>n :tabn<CR>
+
+nmap <C-A>x :qa<CR>
 imap jj <Esc>
 
