@@ -125,6 +125,10 @@ export PS1="\u@\h \[\e[36m\]\w \[\e[92m\]\$(parse_git_branch)\[\e[00m\]$ "
 
 alias g.push='git push'
 alias gc='git commit -m '
+alias g.source='cd ~/source'
+alias g.setup='cd ~/source/Openbox-config/setup'
+alias g.dot='cd ~/source/Openbox-config/dotfiles'
+alias b.reload='source ~/.bashrc'
 
 
 ## get rid of command not found ##

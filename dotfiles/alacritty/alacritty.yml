@@ -1,5 +1,5 @@
 window:
-  start_up: Maximized
+  startup_mode: Maximized
 selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
