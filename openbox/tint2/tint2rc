@@ -98,7 +98,7 @@ border_color_pressed = #ffffff 60
 
 #-------------------------------------
 # Panel
-panel_items = LTSC
+panel_items = LTSCB
 panel_size = 100% 35
 panel_margin = 0 0
 panel_padding = 10 2 10
@@ -225,6 +225,8 @@ clock_dwheel_command =
 
 #-------------------------------------
 # Battery
+
+battery = 1
 battery_tooltip = 1
 battery_low_status = 10
 battery_low_cmd = xmessage 'tint2: Battery low!'

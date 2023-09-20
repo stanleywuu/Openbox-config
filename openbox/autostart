@@ -1,5 +1,8 @@
 xinput set-prop 12 321 1 &
+xinput set-prop 13 323 1 & 
+xinput set-prop 14 323 1 & 
 setxkbmap -option ctrl:nocaps &
+xmodmap ~/.Xmodmap & 
 
 #start conky
 devilspie &
