@@ -122,20 +122,38 @@ parse_git_branch() {
 }
 
 export PS1="\u@\h \[\e[36m\]\w \[\e[92m\]\$(parse_git_branch)\[\e[00m\]$ "
-alias docker='sudo docker'
-alias dc='sudo docker-compose'
 
-alias term=terminator
-alias browser=qutebrowser
-alias configterm='terminator -l Config'
-alias myeditor=code
-alias apt='sudo apt-get'
-alias aptinst='sudo apt-get install'
-alias g.conky='cd ~/.config/openbox/conky'
-alias g.config='cd ~/.config/openbox'
-alias g.git='cd ~/source/'
-alias g.source='cd ~/source/'
+alias g.push='git push'
+alias gc='git commit -m '
+alias g.source='cd ~/source'
 alias g.setup='cd ~/source/Openbox-config/setup'
-alias g.contentlab='cd ~/contentlab/'
+alias g.dot='cd ~/source/Openbox-config/dotfiles'
+alias b.reload='source ~/.bashrc'
+
+
+## get rid of command not found ##
+alias cd..='cd ..'
+ 
+## a quick way to get out of current directory ##
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../..'
+
+## Colorize the ls output ##
+alias ls='ls --color=auto'
+ 
+## Use a long listing format ##
+alias ll='ls -la'
+ 
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
+
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+
+
 
 stty -ixon

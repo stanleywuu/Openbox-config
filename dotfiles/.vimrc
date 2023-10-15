@@ -51,6 +51,12 @@ nnoremap <C-L> <C-W><C-L>
 "left
 nnoremap <C-H> <C-W><C-H>
 
+"tmux like tab section, use n and p to select next and previous
+nmap <C-A>0 :tabfirst<CR>
+nmap <C-A>p :tabp<CR>
+nmap <C-A>n :tabn<CR>
+
+nmap <C-A>x :qa<CR>
 imap jj <Esc>
 nnoremap <space> za
 
