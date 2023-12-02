@@ -155,5 +155,12 @@ alias l.='ls -d .* --color=auto'
 alias grep='grep --color=auto'
 
 
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+    . "$HOME/.bashrc"
+    fi
+fi
 
 stty -ixon
