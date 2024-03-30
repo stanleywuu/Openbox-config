@@ -242,6 +242,9 @@ Copy the file to $HOME/.config/openbox/ instead. -->
 			<action name="ToggleShowDesktop"/>
 		</keybind>
 		<!-- Keybindings for windows -->
+		<keybind key="W-x">
+			<action name="Close"/>
+		</keybind>
 		<keybind key="A-F4">
 			<action name="Close"/>
 		</keybind>
