@@ -114,6 +114,7 @@ launcher_item_app = /usr/share/applications/code.desktop
 launcher_item_app = /usr/share/applications/vim.desktop
 launcher_item_app = /usr/share/applications/thunar.desktop
 launcher_item_app = /usr/share/applications/terminator.desktop
+launcher_item_app = ~/apps/FreeCAD.desktop
 launcher_item_app = /usr/share/applications/firefox-esr.desktop
 
 #-------------------------------------
