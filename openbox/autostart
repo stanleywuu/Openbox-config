@@ -30,6 +30,8 @@ urxvt -name urxvt-back1 &
 urxvt -name urxvt-back2 &
 urxvt -name urxvt-back3 &
 urxvt -name urxvt-back4 &
+systemctl --user daemon-reload
+systemctl --user enable opentabledriver.service --now
 
 sleep 2s
 qutebrowser &
