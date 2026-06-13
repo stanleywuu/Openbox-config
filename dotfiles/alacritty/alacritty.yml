@@ -14,6 +14,8 @@ selection:
 
 key_bindings:
   - { key: V, mods: Control, action: Paste }
+  - { key: C, mods: Control, action: Copy }
+  - { key: C, mods: Control|Shift, chars: "\x03" }
 
 font:
   normal:    
@@ -39,6 +41,4 @@ colors:
     magenta: '#696ebf'
     cyan: '#289c93'
     white: '#bfbaac'
-selection:
-  save_to_clipboard: true
 
