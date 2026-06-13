@@ -344,6 +344,7 @@ Copy the file to $HOME/.config/openbox/ instead. -->
 	</keyboard>
 	<mouse>
 		<dragThreshold>1</dragThreshold>
+        <windowDragModifier>Super</windowDragModifier>
 		<!-- number of pixels the mouse must move before a drag begins -->
 		<doubleClickTime>500</doubleClickTime>
 		<!-- in milliseconds (1000 = 1 second) -->
